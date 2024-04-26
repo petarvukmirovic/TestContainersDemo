@@ -22,7 +22,7 @@ namespace TestContainersDemo
 		public async Task ExampleBlogTestNoAsync()
 		{
 			// arrange
-			var blogsDb = await fixture.CreateInMemotyContext();
+			var blogsDb = await fixture.CreateInMemoryContext();
 
 			// act
 			var wwwCount =

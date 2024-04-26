@@ -40,7 +40,8 @@ namespace TestContainersDemo.DatabaseSetup
 			return dbContext;
 		}
 
-		public async Task<BlogContext> CreateInMemotyContext()
+		// not thread safe and not production ready!
+		public async Task<BlogContext> CreateInMemoryContext()
 		{
 			BlogContext dbContext = CreateDefaultInMemoryContext();
 			if (!startedInMemory)
